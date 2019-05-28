@@ -1,0 +1,18 @@
+<h1><strong>TASKS</strong></h1>
+
+   <ol>
+   <h4>TO-DO</h4>
+    <% @tasks.each do |task| %>
+      <li><%= link_to  "#{task.title}", task_path(task)%>
+        <%= link_to 'Edit', edit_task_path(task) %>
+        <%= link_to 'Destroy', task_path(task), method: :delete, data: { confirm: "Are you sure?" } %>
+
+        <%= @task %> | <%= link_to "Complete", complete_task_path(task), method: :put %>
+      </li>
+    <%end%>
+  </ol>
+
+
+<%= link_to 'Add new task', new_task_path %>
+
+

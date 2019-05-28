@@ -3,5 +3,5 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+  # tasks = Tasks.create([{ title: 'work' }, { details: 'le Wagon :task manager' }, { completed: true }])
+
