@@ -39,10 +39,11 @@ class TasksController < ApplicationController
     redirect_to tasks_path
   end
 
+  def complete
+     if @task[:completed] = true
 
-   def complete
+    @task.completed = true
 
-   @task.completed = true
    @task.save
    redirect_to tasks_path
   end
